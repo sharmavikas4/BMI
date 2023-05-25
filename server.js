@@ -26,6 +26,6 @@ app.post("/bmicalculator",function(req,res){
     res.send("The bmi is "+ bmi + " and the person has obesity");
   }
 });
-app.listen(3000,function(){
+app.listen(process.env.PORT||3000,function(){
   console.log("The server started at the port 3000")
 })
